@@ -1,0 +1,8 @@
+.ant-menu-horizontal {
+    height: 100%
+}
+.ant-menu-horizontal .ant-menu-submenu-horizontal {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
