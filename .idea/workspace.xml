@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af76e905-5fbc-4d72-a9bc-73905273344b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Marvin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Marvin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/default.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/deployment.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/ingress.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/env.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/env.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/run/runMicroApps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/run/runMicroApps.js" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,10 +54,16 @@
   </component>
   <component name="ProjectId" id="1mYFyw2GB3gGX4e6YSY3rAWf7bf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../simple-user-center-web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -65,30 +78,19 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\person_project\microservice-web\simple-main-app-web" />
+      <recent name="D:\person_project\microservice-web\simple-main-app-web\src\components\nav\horizontal" />
+      <recent name="D:\person_project\microservice-web\simple-main-app-web\src\http" />
+      <recent name="D:\person_project\microservice-web\simple-main-app-web\src\scripts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\person_project\microservice-web\simple-main-app-web\src\components\nav\vertical" />
       <recent name="D:\person_project\microservice-web\simple-main-app-web\src\view" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\person_project\microservice-web\simple-main-app-web\src\components\nav\horizontal" />
-      <recent name="D:\person_project\microservice-web\simple-main-app-web" />
-      <recent name="D:\person_project\microservice-web\simple-main-app-web\src\http" />
-      <recent name="D:\person_project\microservice-web\simple-main-app-web\src\scripts" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="npm.start">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -118,6 +120,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -140,20 +143,27 @@
       <workItem from="1609663132477" duration="107000" />
       <workItem from="1609663262341" duration="4251000" />
       <workItem from="1609667543654" duration="28000" />
+      <workItem from="1609669905041" duration="32000" />
+      <workItem from="1620020898233" duration="313000" />
+      <workItem from="1620035320351" duration="1544000" />
+      <workItem from="1621951321699" duration="3624000" />
+      <workItem from="1622035075346" duration="33000" />
+      <workItem from="1622218431643" duration="14000" />
+      <workItem from="1622311668027" duration="12000" />
+      <workItem from="1623566552143" duration="14000" />
+      <workItem from="1627303248602" duration="9326000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -172,5 +182,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

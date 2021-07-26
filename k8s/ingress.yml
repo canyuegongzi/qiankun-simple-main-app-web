@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: simple-main-app-web-ingress
+  namespace: default
+  annotations:
+    kubernetes.io/ingress.class: traefik
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /simple-main-app-web
+            pathType: Prefix
+            backend:
+              serviceName: simple-main-app-web-service
+              servicePort: 10010

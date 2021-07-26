@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: simple-main-app-web
+  name: simple-main-app-web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: simple-main-app-web
+  template:
+    metadata:
+      labels:
+        app: simple-main-app-web
+    spec:
+      containers:
+          - image: canyuegongzi/simple-main-app-web:1.3
+            imagePullPolicy: IfNotPresent
+            name: simple-main-app-web

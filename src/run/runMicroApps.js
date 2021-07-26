@@ -31,9 +31,10 @@ export const checkUserInfo = () => {
             return;
         }
         const userInfo = await initUserLogin(sessionStorageToken);
-        if (userInfo && userInfo.data && userInfo.data.success) {
+        if (userInfo && userInfo.data && userInfo.success) {
             const appWebList = await getMicroApps();
-            const menus = await getUserMenusList(userInfo.data.data.name, userInfo.data.data.role.id);
+            const menus = await getUserMenusList(userInfo.data.name, userInfo.data.role.id);
+            console.log(menus)
             let firstMenus = {}
             if (window.location.hash && window.location.pathname) {
                 firstMenus = getFirstmenusByUrl(menus);
@@ -43,7 +44,7 @@ export const checkUserInfo = () => {
             if (firstMenus && firstMenus.firstKey) {
                 window.history.pushState({}, '聚合管理系统', firstMenus.firstKey);
             }
-            resolve({success: userInfo.data.success, userInfo: userInfo.data.data, appWebList: appWebList, menus, firstMenus })
+            resolve({success: userInfo.success, userInfo: userInfo.data, appWebList: appWebList, menus, firstMenus })
             return;
         }
         illegalityUserCallback();
@@ -71,7 +72,7 @@ export const getMicroApps = async () => {
         let systemList = [];
         const resultList = [];
         if (res && res.data && res.data.data) {
-            systemList = res.data.data.data;
+            systemList = res.data.data;
         }
         for (let i = 0; i < systemList.length; i ++) {
             const value = systemList[i].attrValue.split('::');
@@ -112,8 +113,8 @@ export const initSystem = () => {
 export const getUserMenusList = (userName, roleId, system = "micro-apps-web") => {
     return new Promise(async (resolve) => {
         const res = await $get(userCenterApi.userAuthority.url, { user: userName, roleId: roleId, system}, userCenterApi.userAuthority.server);
-        dealMenus(res.data.data);
-        resolve(res && res.data.data ? res.data.data : [] )
+        dealMenus(res.data);
+        resolve(res && res.data ? res.data : [] )
     })
 }
 
